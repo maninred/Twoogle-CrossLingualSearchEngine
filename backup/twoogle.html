@@ -1,0 +1,113 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .bg-1 { 
+      background-color: #1abc9c;
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d;
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff;
+      color: #555555;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  </style>
+<style>
+BODY {
+	FONT-FAMILY: arial,sans-serif
+}
+TD {
+	FONT-FAMILY: arial,sans-serif
+}
+A {
+	FONT-FAMILY: arial,sans-serif
+}
+P {
+	FONT-FAMILY: arial,sans-serif
+}
+.h {
+	FONT-FAMILY: arial,sans-serif
+}
+.h {
+	FONT-SIZE: 20px
+}
+.q {
+	COLOR: #0000cc
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+div.content {
+    margin-left: 25%;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+input[type=text] {
+    width: 50%;
+    box-sizing: 50px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px 12px 40px;
+}
+</style>
+</head>
+<BODY text=#000000 vLink=#551a8b aLink=#ff0000 link=#0000cc bgColor=#ffffff>
+
+<CENTER>
+<img alt=Twoogle src="logo1.jpg" style="width:300px;height:300px;">
+</br>
+<img alt=Twoogle src="Twitter_logo-8.jpg" style="width:300px;height:128px;">
+<BR>
+
+<!-- Use of this code assumes agreement with the Google Custom Search Terms of Service. -->
+<!-- The terms of service are available at http://www.google.com//cse/docs/tos.html -->
+<form name="cse" id="demo" method="GET" action="search.php">
+  <input name="qrr" id="querrry" type="text" size="40" placeholder="Search.."/>
+  <input name="q" type=hidden id="querry" value="0"/>
+  <input name="start" type=hidden value="0"/>
+  <input name="rows" type=hidden value="10"/>
+  <input name="page" type=hidden value="1"/>
+  </br>
+  </br>
+  <input type="submit" class="btn btn-default btn-lg" value="Twoogle search" name="sa" onclick="myFunction();"/>
+
+
+</FONT>
+<script>
+function myFunction() {
+    var uri = document.getElementById("querrry")
+    var res = encodeURI(uri.value);
+    document.getElementById("querry").value= res;
+}
+</script>
+</CENTER></BODY></HTML>
